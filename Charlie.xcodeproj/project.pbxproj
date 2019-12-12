@@ -15,7 +15,7 @@
 		24A71DA623A145AE00FC760E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A71DA423A145AE00FC760E /* LaunchScreen.storyboard */; };
 		24A71DAF23A1463E00FC760E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A71DAE23A1463E00FC760E /* Colors.swift */; };
 		24A71DB223A14D4800FC760E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A71DB123A14D4800FC760E /* Button.swift */; };
-		24A71DB423A1516600FC760E /* LocationSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A71DB323A1516600FC760E /* LocationSuggestionView.swift */; };
+		24A71DB423A1516600FC760E /* CustomizationFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A71DB323A1516600FC760E /* CustomizationFlowView.swift */; };
 		24A71DBC23A158E100FC760E /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A71DBB23A158E100FC760E /* Venue.swift */; };
 		24A71DBE23A15E1400FC760E /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A71DBD23A15E1400FC760E /* Address.swift */; };
 		24A71DC023A15E7700FC760E /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A71DBF23A15E7700FC760E /* Budget.swift */; };
@@ -23,6 +23,8 @@
 		24A71DC423A1603200FC760E /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A71DC323A1603200FC760E /* RecommendationView.swift */; };
 		24A71DC723A1615200FC760E /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 24A71DC623A1615200FC760E /* URLImage */; };
 		24A71DCB23A2211E00FC760E /* RecommendationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A71DCA23A2211E00FC760E /* RecommendationCardView.swift */; };
+		24B6157123A22AA20013287A /* VenueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B6157023A22AA20013287A /* VenueService.swift */; };
+		24B6157423A22B160013287A /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 24B6157323A22B160013287A /* PromiseKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,13 +38,14 @@
 		24A71DA723A145AE00FC760E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24A71DAE23A1463E00FC760E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		24A71DB123A14D4800FC760E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		24A71DB323A1516600FC760E /* LocationSuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSuggestionView.swift; sourceTree = "<group>"; };
+		24A71DB323A1516600FC760E /* CustomizationFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationFlowView.swift; sourceTree = "<group>"; };
 		24A71DBB23A158E100FC760E /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		24A71DBD23A15E1400FC760E /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		24A71DBF23A15E7700FC760E /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		24A71DC123A15E8200FC760E /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		24A71DC323A1603200FC760E /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
 		24A71DCA23A2211E00FC760E /* RecommendationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationCardView.swift; sourceTree = "<group>"; };
+		24B6157023A22AA20013287A /* VenueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B6157423A22B160013287A /* PromiseKit in Frameworks */,
 				24A71DC723A1615200FC760E /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,7 +123,7 @@
 				24A71D9D23A145AC00FC760E /* OnboardingView.swift */,
 				24A71DC323A1603200FC760E /* RecommendationView.swift */,
 				24A71DCA23A2211E00FC760E /* RecommendationCardView.swift */,
-				24A71DB323A1516600FC760E /* LocationSuggestionView.swift */,
+				24A71DB323A1516600FC760E /* CustomizationFlowView.swift */,
 				24A71DAD23A1462600FC760E /* Design */,
 			);
 			path = UI;
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				24A71DBA23A158C900FC760E /* Models */,
+				24B6157023A22AA20013287A /* VenueService.swift */,
 			);
 			path = "Business Logic";
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			name = Charlie;
 			packageProductDependencies = (
 				24A71DC623A1615200FC760E /* URLImage */,
+				24B6157323A22B160013287A /* PromiseKit */,
 			);
 			productName = Charlie;
 			productReference = 24A71D9623A145AC00FC760E /* Charlie.app */;
@@ -193,6 +199,7 @@
 			mainGroup = 24A71D8D23A145AC00FC760E;
 			packageReferences = (
 				24A71DC523A1615200FC760E /* XCRemoteSwiftPackageReference "url-image" */,
+				24B6157223A22B160013287A /* XCRemoteSwiftPackageReference "PromiseKit" */,
 			);
 			productRefGroup = 24A71D9723A145AC00FC760E /* Products */;
 			projectDirPath = "";
@@ -226,8 +233,9 @@
 				24A71DAF23A1463E00FC760E /* Colors.swift in Sources */,
 				24A71DBC23A158E100FC760E /* Venue.swift in Sources */,
 				24A71DC423A1603200FC760E /* RecommendationView.swift in Sources */,
-				24A71DB423A1516600FC760E /* LocationSuggestionView.swift in Sources */,
+				24A71DB423A1516600FC760E /* CustomizationFlowView.swift in Sources */,
 				24A71DC223A15E8200FC760E /* Rating.swift in Sources */,
+				24B6157123A22AA20013287A /* VenueService.swift in Sources */,
 				24A71DC023A15E7700FC760E /* Budget.swift in Sources */,
 				24A71D9C23A145AC00FC760E /* SceneDelegate.swift in Sources */,
 				24A71DCB23A2211E00FC760E /* RecommendationCardView.swift in Sources */,
@@ -372,6 +380,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Charlie/Preview Content\"";
 				DEVELOPMENT_TEAM = A88UHFQD28;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Charlie",
+				);
 				INFOPLIST_FILE = Charlie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,6 +404,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Charlie/Preview Content\"";
 				DEVELOPMENT_TEAM = A88UHFQD28;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Charlie",
+				);
 				INFOPLIST_FILE = Charlie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,6 +452,14 @@
 				minimumVersion = 0.9.9;
 			};
 		};
+		24B6157223A22B160013287A /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -443,6 +467,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 24A71DC523A1615200FC760E /* XCRemoteSwiftPackageReference "url-image" */;
 			productName = URLImage;
+		};
+		24B6157323A22B160013287A /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24B6157223A22B160013287A /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

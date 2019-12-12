@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import URLImage
 
 struct RecommendationView: View {
     let venue: Venue
